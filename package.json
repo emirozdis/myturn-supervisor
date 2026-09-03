@@ -1,0 +1,26 @@
+{
+  "name": "myturn-vast-supervisor",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Durable Vast.ai instance orchestration and transcoder mission supervisor",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "npm run build && node --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "helmet": "^8.1.0",
+    "pg": "^8.16.3",
+    "pino": "^9.9.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.18.6",
+    "@types/pg": "^8.15.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
+  }
+}
